@@ -2,11 +2,13 @@
 
 A very simple way to determine if a certain date is holiday or not.
 
+## Supported countries/regions
+
+- China
+
 ## Use it in multiple programming languages
 
 You can easily start using it in multiple programming languages, here are some examples:
-
-Want to use it in China? No problem, use the mirror repo - [tonni/is-holiday](https://gitee.com/tonni/is-holiday).
 
 ### Bash
 
@@ -69,3 +71,17 @@ if (strpos($data, $today) !== false) {
     echo 'Go back to work';
 }
 ```
+
+## Generate a new holiday list
+
+```shell
+$ node generate.js --country cn --year 2020
+```
+
+This command will read holiday settings stored in source/cn/2020.js. The holiday settings JS file is a simple node module that consists of 2 properties: `holidays` and `workWeekends`. Here's how it looks like - [example](./source/cn/2020.js).
+
+## Q&A
+
+### Searching in a txt file looks unfancy and inefficient.
+
+That's the point, I want to make it simple, stupid and reliable to use, that's why I prefer to host it directly on GitHub rather than making it into a real API service and host it on my server, my own server's stability is nowhere near GitHub's, plus even if you think GitHub isn't stable enough you can just download the txt file and store it in your local.

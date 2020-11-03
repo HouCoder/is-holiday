@@ -1,0 +1,17 @@
+{
+  "name": "is-holiday",
+  "version": "0.0.1",
+  "homepage": "git@github.com:HouCoder/is-holiday",
+  "main": "./generate.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/houcoder/is-holiday.git"
+  },
+  "author": "HouCoder<hby3387@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^6.2.0",
+    "moment": "^2.29.1"
+  }
+}
