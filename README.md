@@ -63,7 +63,7 @@ else:
 
 ```php
 $today = date('Ymd');
-$data = file_get_contents('http://127.0.0.1:8080/china/2020.txt');
+$data = file_get_contents('https://raw.githubusercontent.com/HouCoder/is-holiday/master/dist/cn/2020.txt');
 
 if (strpos($data, $today) !== false) {
     echo 'Enjoy your day off';
