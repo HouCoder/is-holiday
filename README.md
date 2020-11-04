@@ -2,9 +2,10 @@
 
 A very simple way to determine if a certain date is holiday or not.
 
-## Supported countries/regions
+## Supported regions
 
 - China
+- Honkong
 
 ## Use it in multiple programming languages
 
@@ -75,7 +76,7 @@ if (strpos($data, $today) !== false) {
 ## Generate a new holiday list
 
 ```shell
-$ node generate.js --country cn --year 2020
+$ node generate.js --region cn --year 2020
 ```
 
 This command will read holiday settings stored in source/cn/2020.js. The holiday settings JS file is a simple node module that consists of 2 properties: `holidays` and `workWeekends`. Here's how it looks like - [example](./source/cn/2020.js).
